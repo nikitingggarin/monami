@@ -3,73 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MoN · AMI - магазин модной одежды в Чехове</title>
+    <title>MoN · AmI - магазин модной одежды в Чехове</title>
     <meta name="description" content="Самые трендовые модели одежды для женщин в Чехове. Низкие цены, ежедневные обновления коллекций. Приходите и найдите свой уникальный стиль!">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+
 </head>
-<!-- <script src="https://api-maps.yandex.ru/v3/?apikey=7aff54a8-e89f-440d-aa57-eb2a3fc1734e&lang=ru_RU" type="text/javascript" defer></script> -->
 <body>
     <header>
         <div class="container header-content">
             <div class="logo">
-                <h1>MoN · AMI</h1>
+                <h1>MoN · AmI <span class="logo-sub">by Terzi</span></h1>
             </div>
             <nav>
                 <ul>
-                    <li><a href="#main">Главная</a></li>
-                    <!-- <li><a href="#products">Товары</a></li> -->
+                    <li><a href="#hero">Главная</a></li>
                     <li><a href="#about">О нас</a></li>
                     <li><a href="#contacts">Контакты</a></li>
                 </ul>
             </nav>
-            <!-- <div class="cart">
-                <a href="#"><i class="fas fa-shopping-cart"></i></a>
-            </div> -->
         </div>
     </header>
 
     <main>
         <section id="hero">
-            <div class="container">
-                <h2>Модная одежда в Чехове</h2>
-                <p>Откройте для себя новый стиль. Уникальные вещи для вашего гардероба.</p>
-                <!-- <a href="#products" class="btn">Смотреть каталог</a> -->
+            <div class="css-carousel">
+                <input type="radio" name="carousel" id="slide1" checked>
+                <input type="radio" name="carousel" id="slide2">
+                <input type="radio" name="carousel" id="slide3">
+                <input type="radio" name="carousel" id="slide4">
+                <input type="radio" name="carousel" id="slide5">
+                <!-- <input type="radio" name="carousel" id="slide6"> -->
+                
+                <div class="carousel-slides">
+                    <div class="carousel-slide">
+                        <img src="public/photo_1.jpg" alt="Модная одежда в MoN AMI">
+                        <div class="slide-content">
+                            <h2>Новая коллекция осень-зима 2025</h2>
+                            <p>Самые свежие тренды сезона уже в нашем магазине</p>
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-slide">
+                        <img src="public/photo_2.jpg" alt="Скидки на одежду">
+                        <div class="slide-content">
+                            <h2>Мы созданы для вашего стиля</h2>
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-slide">
+                        <img src="public/photo_3.jpg" alt="Аксессуары">
+                        <div class="slide-content">
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-slide">
+                        <img src="public/photo_4.jpg" alt="Вечерние наряды">
+                        <div class="slide-content">
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-slide">
+                        <img src="public/photo_5.jpg" alt="Джинсовая коллекция">
+                        <div class="slide-content">
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <div class="carousel-controls">
+                    <!-- Кнопки навигации -->
+                    <label for="slide1" class="carousel-prev">‹</label>
+                    <label for="slide2" class="carousel-next">›</label>
+                    
+                    <label for="slide2" class="carousel-prev">‹</label>
+                    <label for="slide3" class="carousel-next">›</label>
+                    
+                    <label for="slide3" class="carousel-prev">‹</label>
+                    <label for="slide4" class="carousel-next">›</label>
+
+                    <label for="slide4" class="carousel-prev">‹</label>
+                    <label for="slide5" class="carousel-next">›</label>
+                    
+                    <label for="slide5" class="carousel-prev">‹</label>
+                    <label for="slide1" class="carousel-next">›</label>
+                    
+                </div>
+                
+                <div class="carousel-nav">
+                    <label for="slide1" class="carousel-dot"></label>
+                    <label for="slide2" class="carousel-dot"></label>
+                    <label for="slide3" class="carousel-dot"></label>
+                    <label for="slide4" class="carousel-dot"></label>
+                    <label for="slide5" class="carousel-dot"></label>
+                </div>
             </div>
         </section>
 
         <section id="about">
             <div class="container">
-                <h2>О нашем магазине</h2>
+                <h1>О нашем магазине</h1>
                 <p>Мы — молодой и амбициозный магазин модной одежды в самом сердце Чехова. Наша цель — делать стиль доступным для каждого, предлагая только качественные и трендовые вещи по адекватным ценам. Мы лично отбираем каждую модель в нашей коллекции.</p>
             </div>
         </section>
 
         <section id="contacts">
             <div class="container">
-                <h2>Контакты</h2>
+                <h1>Контакты</h1>
                 <div class="contact-info">
                     <p><i class="fas fa-map-marker-alt"></i> <strong>Адрес:</strong> г. Чехов, ул. Московская ул д. 94/2</p>
-                    <p><i class="fas fa-phone"></i> <strong>Телефон:</strong> <a href="tel:+74951234567">+7 (495) 123-45-67</a></p>
-                    <p><i class="fas fa-clock"></i> <strong>Часы работы:</strong> Пн-Пт: 10:00 - 20:00, Сб-Вс: 10:00 - 19:00</p>
+                    <p><i class="fas fa-phone"></i> <strong>Телефон:</strong> <a href="tel:+79851418555">+7 (985) 141-55-55</a></p>
+                    <p><i class="fas fa-paper-plane"></i> <strong>Telegram:</strong> <a href="https://t.me/+0X35G9yH6qk1ZGE6"><u>MoN·AmI</u></a></p>
+                    <p><i class="fab fa-whatsapp"></i> <strong>Whatsapp:</strong> <a href="https://chat.whatsapp.com/KKuxeFbatFzHuPYKwvqAYL?mode=ems_share_c"><u>MoN·AmI</u></a></p>
+                    
+                    <p><i class="far fa-clock"></i> <strong>Часы работы:</strong> Пн-Вс: 10:00 - 20:00</p>
                 </div>
-                <!-- Контейнер для карты. Вы можете вставить код с Яндекс.Карт или Google Maps сюда later. -->
-                <div class="map-placeholder" >
+                <div class="map-placeholder">
                     <iframe 
                         style="border: 0;"
                         src="https://yandex.ru/map-widget/v1/org/mon_ami/222880659665/?from=mapframe&ll=37.467412%2C55.154675&z=16" 
                         width="100%" 
                         height="100%" 
-                        allowfullscreen="true" 
-                    >
+                        allowfullscreen="true">
                     </iframe>          
+                </div>
             </div>
         </section>
     </main>
 
     <footer>
         <div class="container">
-            <p>&copy; 2023 MoN · AMI. Магазин одежды в Чехове.</p>
+            <p>&copy; 2022 MoN · AMI. Магазин одежды в Чехове.</p>
         </div>
     </footer>
 </body>
